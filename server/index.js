@@ -7,10 +7,14 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const port = process.env.PORT || 5000
-
 app.use('/api', questionRoutes)
 
-app.listen(port, () => {
-  console.log(`Backend app listening at http://localhost:${port}`)
-})
+const port = process.env.PORT || 5000
+
+try {
+  app.listen(port, () => {
+    console.log(`Backend app listening at http://localhost:${5000}`)
+  })
+} catch(err) {
+  console.error(err)
+}

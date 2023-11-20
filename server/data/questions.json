@@ -1,77 +1,534 @@
 [
-  {"question": "What is the capital of France?", "subject": "Geography", "topic": "World Capitals", "difficulty": "Easy", "marks": 5},
-  {"question": "Solve for x: 2x + 5 = 15", "subject": "Mathematics", "topic": "Algebra", "difficulty": "Medium", "marks": 10},
-  {"question": "Define Newton's first law of motion.", "subject": "Physics", "topic": "Mechanics", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the chemical symbol for gold?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 5},
-  {"question": "In which year did World War II end?", "subject": "History", "topic": "World War II", "difficulty": "Medium", "marks": 15},
-  {"question": "What is the square root of 64?", "subject": "Mathematics", "topic": "Algebra", "difficulty": "Easy", "marks": 5},
-  {"question": "Name the largest planet in our solar system.", "subject": "Astronomy", "topic": "Planets", "difficulty": "Medium", "marks": 10},
-  {"question": "Balance the chemical equation: H2 + O2 → H2O", "subject": "Chemistry", "topic": "Chemical Reactions", "difficulty": "Medium", "marks": 10},
-  {"question": "Who painted the Mona Lisa?", "subject": "Art", "topic": "Paintings", "difficulty": "Hard", "marks": 20},
-  {"question": "What is the main component of air?", "subject": "Science", "topic": "Atmosphere", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the value of π (pi) to two decimal places?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 5},
-  {"question": "Which programming language is known for its simplicity and readability?", "subject": "Computer Science", "topic": "Programming Languages", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the powerhouse of the cell?", "subject": "Biology", "topic": "Cell Biology", "difficulty": "Easy", "marks": 5},
-  {"question": "How many continents are there on Earth?", "subject": "Geography", "topic": "Continents", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the formula for the area of a rectangle?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 5},
-  {"question": "Who developed the theory of relativity?", "subject": "Physics", "topic": "Relativity", "difficulty": "Hard", "marks": 20},
-  {"question": "Which planet is known as the Red Planet?", "subject": "Astronomy", "topic": "Planets", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the largest ocean on Earth?", "subject": "Geography", "topic": "Oceans", "difficulty": "Medium", "marks": 10},
-  {"question": "Who is the author of 'To Kill a Mockingbird'?", "subject": "Literature", "topic": "American Literature", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the capital of Japan?", "subject": "Geography", "topic": "World Capitals", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the process of plants making their own food called?", "subject": "Biology", "topic": "Photosynthesis", "difficulty": "Medium", "marks": 10},
-  {"question": "Which gas do plants absorb from the atmosphere?", "subject": "Biology", "topic": "Plants", "difficulty": "Easy", "marks": 5},
-  {"question": "In which year did Christopher Columbus reach the Americas?", "subject": "History", "topic": "Explorers", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the currency of China?", "subject": "Economics", "topic": "Currencies", "difficulty": "Easy", "marks": 5},
-  {"question": "Who painted 'Starry Night'?", "subject": "Art", "topic": "Paintings", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the square of 9?", "subject": "Mathematics", "topic": "Algebra", "difficulty": "Easy", "marks": 5},
-  {"question": "Which element has the chemical symbol Fe?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 5},
-  {"question": "Who is known as the 'Father of Modern Physics'?", "subject": "Physics", "topic": "Physicists", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the main function of the respiratory system?", "subject": "Biology", "topic": "Human Body", "difficulty": "Medium", "marks": 10},
-  {"question": "Which country is famous for the Taj Mahal?", "subject": "Geography", "topic": "Landmarks", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the formula for the volume of a cylinder?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Medium", "marks": 10},
-  {"question": "Who is the author of '1984'?", "subject": "Literature", "topic": "Dystopian Literature", "difficulty": "Hard", "marks": 20},
-  {"question": "What is the capital of Australia?", "subject": "Geography", "topic": "World Capitals", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the speed of light?", "subject": "Physics", "topic": "Waves", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the chemical formula for water?", "subject": "Chemistry", "topic": "Compounds", "difficulty": "Easy", "marks": 5},
-  {"question": "Who was the first President of the United States?", "subject": "History", "topic": "U.S. Presidents", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the value of pi (π) to two decimal places?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 5},
-  {"question": "Which planet is known as the 'Morning Star'?", "subject": "Astronomy", "topic": "Planets", "difficulty": "Medium", "marks": 10},
-  {"question": "Who wrote 'The Catcher in the Rye'?", "subject": "Literature", "topic": "American Literature", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the currency of India?", "subject": "Economics", "topic": "Currencies", "difficulty": "Easy", "marks": 5},
-  {"question": "Who painted the Sistine Chapel ceiling?", "subject": "Art", "topic": "Paintings", "difficulty": "Hard", "marks": 20},
-  {"question": "What is the sum of angles in a triangle?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the structure of the Earth's core?", "subject": "Geography", "topic": "Geology", "difficulty": "Medium", "marks": 10},
-  {"question": "Define Boyle's law.", "subject": "Physics", "topic": "Gas Laws", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the atomic number of oxygen?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 5},
-  {"question": "In which century did the Renaissance occur?", "subject": "History", "topic": "Renaissance", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the difference between an acid and a base?", "subject": "Chemistry", "topic": "Acids and Bases", "difficulty": "Easy", "marks": 5},
-  {"question": "Solve for y: 3y - 7 = 14", "subject": "Mathematics", "topic": "Algebra", "difficulty": "Easy", "marks": 5},
-  {"question": "Who discovered penicillin?", "subject": "Science", "topic": "Medicine", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the largest desert in the world?", "subject": "Geography", "topic": "Deserts", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the SI unit of force?", "subject": "Physics", "topic": "Mechanics", "difficulty": "Medium", "marks": 10},
-  {"question": "Name the scientist who formulated the periodic table.", "subject": "Chemistry", "topic": "Periodic Table", "difficulty": "Hard", "marks": 20},
-  {"question": "Who was the first woman to win a Nobel Prize?", "subject": "Science", "topic": "Nobel Laureates", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the capital of Russia?", "subject": "Geography", "topic": "World Capitals", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the formula for the volume of a cone?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Medium", "marks": 10},
-  {"question": "Explain the concept of natural selection.", "subject": "Science", "topic": "Evolution", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the freezing point of water in Celsius?", "subject": "Science", "topic": "Temperature", "difficulty": "Easy", "marks": 5},
-  {"question": "Who developed the theory of electromagnetism?", "subject": "Physics", "topic": "Electromagnetism", "difficulty": "Hard", "marks": 20},
-  {"question": "What is the chemical formula for methane?", "subject": "Chemistry", "topic": "Compounds", "difficulty": "Easy", "marks": 5},
-  {"question": "In which era did the dinosaurs exist?", "subject": "Science", "topic": "Paleontology", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the population of India as of the latest estimate?", "subject": "Geography", "topic": "Demographics", "difficulty": "Medium", "marks": 10},
-  {"question": "Who proposed the heliocentric model of the solar system?", "subject": "Astronomy", "topic": "Solar System", "difficulty": "Hard", "marks": 20},
-  {"question": "What is the boiling point of water in Fahrenheit?", "subject": "Science", "topic": "Temperature", "difficulty": "Easy", "marks": 5},
-  {"question": "Which gas is responsible for the greenhouse effect?", "subject": "Science", "topic": "Climate Change", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the capital of China?", "subject": "Geography", "topic": "World Capitals", "difficulty": "Easy", "marks": 5},
-  {"question": "What is the Pythagorean theorem?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Medium", "marks": 10},
-  {"question": "Define the law of conservation of energy.", "subject": "Physics", "topic": "Energy", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the chemical symbol for sodium?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 5},
-  {"question": "Who was the first woman to win two Nobel Prizes?", "subject": "Science", "topic": "Nobel Laureates", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the currency of Brazil?", "subject": "Economics", "topic": "Currencies", "difficulty": "Easy", "marks": 5},
-  {"question": "Who painted 'The Starry Night'?", "subject": "Art", "topic": "Paintings", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the square of 11?", "subject": "Mathematics", "topic": "Algebra", "difficulty": "Easy", "marks": 5},
-  {"question": "Which element has the atomic number 79?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 5},
-  {"question": "Who proposed the theory of continental drift?", "subject": "Geography", "topic": "Plate Tectonics", "difficulty": "Medium", "marks": 10},
-  {"question": "What is the SI unit of electric current?", "subject": "Physics", "topic": "Electromagnetism", "difficulty": "Medium", "marks": 10}
+  {
+    "question": "What is the capital of France?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Solve for x: 2x + 5 = 15",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Define Newton's first law of motion.",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "In which year did World War II end?",
+    "subject": "History",
+    "topic": "World War II",
+    "difficulty": "Medium",
+    "marks": 15
+  },
+  {
+    "question": "What is the square root of 64?",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Name the largest planet in our solar system.",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Balance the chemical equation: H2 + O2 → H2O",
+    "subject": "Chemistry",
+    "topic": "Chemical Reactions",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "subject": "Art",
+    "topic": "Paintings",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "What is the main component of air?",
+    "subject": "Science",
+    "topic": "Atmosphere",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the value of π (pi) to two decimal places?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Which programming language is known for its simplicity and readability?",
+    "subject": "Computer Science",
+    "topic": "Programming Languages",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the powerhouse of the cell?",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "subject": "Geography",
+    "topic": "Continents",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the formula for the area of a rectangle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who developed the theory of relativity?",
+    "subject": "Physics",
+    "topic": "Relativity",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "subject": "Geography",
+    "topic": "Oceans",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Who is the author of 'To Kill a Mockingbird'?",
+    "subject": "Literature",
+    "topic": "American Literature",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the process of plants making their own food called?",
+    "subject": "Biology",
+    "topic": "Photosynthesis",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "subject": "Biology",
+    "topic": "Plants",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "In which year did Christopher Columbus reach the Americas?",
+    "subject": "History",
+    "topic": "Explorers",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the currency of China?",
+    "subject": "Economics",
+    "topic": "Currencies",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who painted 'Starry Night'?",
+    "subject": "Art",
+    "topic": "Paintings",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the square of 9?",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Which element has the chemical symbol Fe?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who is known as the 'Father of Modern Physics'?",
+    "subject": "Physics",
+    "topic": "Physicists",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the main function of the respiratory system?",
+    "subject": "Biology",
+    "topic": "Human Body",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Which country is famous for the Taj Mahal?",
+    "subject": "Geography",
+    "topic": "Landmarks",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the formula for the volume of a cylinder?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Who is the author of '1984'?",
+    "subject": "Literature",
+    "topic": "Dystopian Literature",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the speed of light?",
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the chemical formula for water?",
+    "subject": "Chemistry",
+    "topic": "Compounds",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "subject": "History",
+    "topic": "U.S. Presidents",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the value of pi (π) to two decimal places?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Which planet is known as the 'Morning Star'?",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Who wrote 'The Catcher in the Rye'?",
+    "subject": "Literature",
+    "topic": "American Literature",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the currency of India?",
+    "subject": "Economics",
+    "topic": "Currencies",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who painted the Sistine Chapel ceiling?",
+    "subject": "Art",
+    "topic": "Paintings",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "What is the sum of angles in a triangle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the structure of the Earth's core?",
+    "subject": "Geography",
+    "topic": "Geology",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Define Boyle's law.",
+    "subject": "Physics",
+    "topic": "Gas Laws",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the atomic number of oxygen?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "In which century did the Renaissance occur?",
+    "subject": "History",
+    "topic": "Renaissance",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the difference between an acid and a base?",
+    "subject": "Chemistry",
+    "topic": "Acids and Bases",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Solve for y: 3y - 7 = 14",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "subject": "Science",
+    "topic": "Medicine",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "subject": "Geography",
+    "topic": "Deserts",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Name the scientist who formulated the periodic table.",
+    "subject": "Chemistry",
+    "topic": "Periodic Table",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "subject": "Science",
+    "topic": "Nobel Laureates",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of Russia?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the formula for the volume of a cone?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Explain the concept of natural selection.",
+    "subject": "Science",
+    "topic": "Evolution",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the freezing point of water in Celsius?",
+    "subject": "Science",
+    "topic": "Temperature",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who developed the theory of electromagnetism?",
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "What is the chemical formula for methane?",
+    "subject": "Chemistry",
+    "topic": "Compounds",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "In which era did the dinosaurs exist?",
+    "subject": "Science",
+    "topic": "Paleontology",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the population of India as of the latest estimate?",
+    "subject": "Geography",
+    "topic": "Demographics",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Who proposed the heliocentric model of the solar system?",
+    "subject": "Astronomy",
+    "topic": "Solar System",
+    "difficulty": "Hard",
+    "marks": 20
+  },
+  {
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "subject": "Science",
+    "topic": "Temperature",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Which gas is responsible for the greenhouse effect?",
+    "subject": "Science",
+    "topic": "Climate Change",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of China?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the Pythagorean theorem?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "Define the law of conservation of energy.",
+    "subject": "Physics",
+    "topic": "Energy",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the chemical symbol for sodium?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who was the first woman to win two Nobel Prizes?",
+    "subject": "Science",
+    "topic": "Nobel Laureates",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the currency of Brazil?",
+    "subject": "Economics",
+    "topic": "Currencies",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who painted 'The Starry Night'?",
+    "subject": "Art",
+    "topic": "Paintings",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the square of 11?",
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Which element has the atomic number 79?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who proposed the theory of continental drift?",
+    "subject": "Geography",
+    "topic": "Plate Tectonics",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "Medium",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of India?",
+    "subject": "Geography",
+    "topic": "World Capitals",
+    "difficulty": "Easy",
+    "marks": 5
+  },
 ]

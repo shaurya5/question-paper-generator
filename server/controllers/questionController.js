@@ -1,46 +1,61 @@
 const allQuestions = require("../data/questions.json");
+const { generateQuestionPaperHelper, doesQuestionExist } = require("../helpers/questionHelper");
+const fs = require("fs");
+const path = require("path");
 
-function getQuestionsByDifficulty(difficulty) {
-  return allQuestions.filter((q) => q.difficulty === difficulty);
-}
+const questionStorePath = path.join(__dirname, "../data/questions.json");
+let questionStore = require(questionStorePath);
 
-function generateQuestionPaperHelper(totalMarks, difficultyDistribution) {
-  const paper = [];
-
-  for (let [difficulty, distribution] of Object.entries(
-    difficultyDistribution
-  )) {
-    const marksForThisDifficulty = Math.round(
-      (distribution / 100) * totalMarks 
-    );
-    let marksCovered = 0;
-    const filteredQuestions = getQuestionsByDifficulty(difficulty);
-
-    while (marksCovered < marksForThisDifficulty) {
-      const question = filteredQuestions[Math.floor(Math.random() * filteredQuestions.length)];
-      paper.push(question);
-      marksCovered += question.marks;
-    }
+const getAllQuestions = (_, res) => {
+  try {
+    res.send(allQuestions);
+  } catch (err) {
+    console.error(err);
   }
+};
 
-  return paper;
-}
+const postQuestion = (req, res) => {
+  try {
+    const newQuestion = req.body;
 
-const getAllQuestions = (req, res) => {
-  res.send(allQuestions);
+    if (doesQuestionExist(questionStore, newQuestion)) {
+      res.status(400).send("Question already exists");
+      return;
+    }
+    questionStore.push(newQuestion);
+
+    fs.writeFile(
+      questionStorePath,
+      JSON.stringify(questionStore, null, 2),
+      (err) => {
+        if (err) {
+          res.status(500).send("Error while writing to file");
+        } else {
+          res.status(200).send("Question posted successfully");
+        }
+      }
+    );
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
 };
 
 const generateQuestionPaper = (req, res) => {
-  const { totalMarks, difficultyDistribution } = req.body;
-  const selectedQuestions = {};
-  const questionPaper = generateQuestionPaperHelper(
-    totalMarks,
-    difficultyDistribution
-  );
-  res.send(questionPaper);
+  try {
+    const { totalMarks, difficultyDistribution } = req.body;
+    const questionPaper = generateQuestionPaperHelper(
+      totalMarks,
+      difficultyDistribution
+    );
+    res.send(questionPaper);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 module.exports = {
   getAllQuestions,
   generateQuestionPaper,
+  postQuestion,
 };
