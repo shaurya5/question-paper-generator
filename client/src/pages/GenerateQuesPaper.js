@@ -21,10 +21,30 @@ function GenerateQuesPaper() {
           },
         }
       );
+      if(response.data.length === 0) {
+        alert("No questions found for the given criteria");
+        return;
+      }
       setQuestionPaper(response.data);
     } catch (error) {
       console.error("Error generating question paper:", error);
     }
+  };
+
+  const downloadQuesPaper = () => {
+    const formattedQuestions = questionPaper.map((question, index) => {
+      return `${index + 1}. Question: ${question.question}\n   Marks: ${question.marks}\n   Subject: ${question.subject}\n   Difficulty: ${question.difficulty}\n\n`;
+    });
+  
+    const element = document.createElement("a");
+    const file = new Blob([formattedQuestions.join("")], {
+      type: "text/plain",
+    });
+    
+    element.href = URL.createObjectURL(file);
+    element.download = "question-paper.txt";
+    document.body.appendChild(element);
+    element.click();
   };
 
   return (
@@ -95,7 +115,7 @@ function GenerateQuesPaper() {
         {questionPaper && (
           <div className="mt-4">
             <h3>Question Paper is ready</h3>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+            <button onClick={downloadQuesPaper} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
               Download Question Paper
             </button>
           </div>

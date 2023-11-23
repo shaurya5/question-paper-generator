@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PostQuestion(props) {
+function PostQuestion() {
   return (
     <div>
       

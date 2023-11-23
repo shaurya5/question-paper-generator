@@ -45,6 +45,7 @@ const generateQuestionPaper = (req, res) => {
   try {
     const { totalMarks, difficultyDistribution } = req.body;
     const questionPaper = generateQuestionPaperHelper(
+      allQuestions,
       totalMarks,
       difficultyDistribution
     );
