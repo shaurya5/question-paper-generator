@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import {useNavigate} from 'react-router-dom';
 
 function GenerateQuesPaper() {
   const [totalMarks, setTotalMarks] = useState(0);
@@ -7,7 +8,8 @@ function GenerateQuesPaper() {
   const [medium, setMedium] = useState(0);
   const [hard, setHard] = useState(0);
   const [questionPaper, setQuestionPaper] = useState(null);
-
+  const navigate = useNavigate();
+  
   const generateQuestionPaper = async () => {
     try {
       const response = await axios.post(
@@ -46,6 +48,10 @@ function GenerateQuesPaper() {
     document.body.appendChild(element);
     element.click();
   };
+
+  const handlePostQuestion = () => {
+    navigate('/post-question');
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
@@ -120,6 +126,12 @@ function GenerateQuesPaper() {
             </button>
           </div>
         )}
+        <button
+          className="bg-green-500 text-white p-2 rounded mt-2 hover:bg-green-600"
+          onClick={handlePostQuestion}
+        >
+          Post Question
+        </button>
       </div>
     </div>
   );
