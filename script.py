@@ -1,6 +1,5 @@
 import subprocess
 import os
-import signal
 import platform
 import time
 import atexit
